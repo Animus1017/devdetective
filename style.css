@@ -1,0 +1,211 @@
+:root {
+    --lm-bg: #f6f8ff;
+    --lm-bg-content: #fefefe;
+    --lm-text: #4b6a9b;
+    --lm-text-alt: #2b3442;
+    --lm-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+    --lm-shadow-inactive: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
+    --lm-icon-bg: brightness(100%);
+    /* Btn */
+    --btn: #0079ff;
+    --btn-hover: #60abff;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lm-bg);
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 30%;
+}
+.heading-mode{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading-mode h1{
+    color: var(--lm-text);
+}
+.heading-mode button{
+    display: flex;
+    gap: .5rem;
+    color: var(--lm-text);
+    align-items: center;
+    font-weight: 600;
+    appearance: none;
+    border:none;
+    background:none;
+    cursor: pointer;
+}
+.search-container{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+.search-bar{
+    background-color: var(--lm-bg-content);
+    padding: 1.3rem 3.5rem;
+    border-radius: 1rem;
+    background-image: url('./Images/search-icon.svg');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 1.5rem;
+    position: relative;
+    box-shadow: var(--lm-shadow);
+}
+#error{
+    position: absolute;
+    background-color: red;
+    color: white;
+    padding: .3rem .8rem;
+    border-radius: 5px;
+    font-size: small;
+    font-weight: 600;
+    right: -4%;
+    top: -50%;
+    scale: 0;
+    transition: 500ms;
+    transform-origin: center;
+}
+.search-bar input{
+    border: none;
+    width: 80%;
+    outline: none;
+    color: var(--lm-text);
+    background: none;
+}
+.search-bar input:-webkit-autofill{
+    background: none;
+}
+.search-bar input::placeholder{
+    color: var(--lm-text);
+}
+.search-bar button{
+    position: absolute;
+    font-weight: 600;
+    background-color: var(--btn);
+    color: white;
+    border: none;
+    padding: 1rem 1rem;
+    border-radius: .5rem;
+    top: 11%;
+    right: 1%;
+    cursor: pointer;
+    transition: 300ms;
+}
+.search-bar button:hover{
+    background-color: var(--btn-hover);
+}
+.profile-container{
+    background-color: var(--lm-bg-content);
+    border-radius: 1rem;
+    box-shadow: var(--lm-shadow);
+}
+.user-data{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    padding: 1.5rem 1rem;
+    visibility: hidden;
+}
+.user-data h2{
+    color: var(--lm-text);
+    text-align: center;
+}
+.user-top{
+    display: flex;
+    justify-content: space-between;
+}
+.user-name-img{
+    display: flex;
+    gap: 1rem;
+}
+.user-name-img img{
+    width: 6rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+.user-name{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+#usertag{
+    color: var(--btn);
+}
+#joining{
+    color: var(--lm-text);
+    font-size: smaller;
+    padding: .5rem 0;
+}
+#bio{
+    color: var(--lm-text);
+}
+.stats-container{
+    background-color: var(--lm-bg);
+    display: flex;
+    justify-content: space-between;
+    border-radius: .8rem;
+}
+.stats{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    padding: 1.25rem 2.5rem;
+    align-items: center;
+    
+}
+#name{
+    color: var(--lm-text-alt);
+}
+.stats span{
+    color: var(--lm-text);
+    font-size: smaller;
+}
+.stats a{
+    color: var(--lm-text-alt);
+    font-weight: bolder;
+    text-decoration: none;
+    transition: 300ms;
+    font-size: 1.2rem;
+}
+.stats a:hover{
+    text-decoration: underline;
+}
+.contact-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    row-gap: 1rem;
+}
+.contact a:hover{
+    transition: 300ms;
+    text-decoration: underline;
+}
+.nav{
+    color: var(--lm-text);
+    font-size: .9rem;
+    text-decoration: none;
+}
+.contact{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+.contact img{
+    filter: var(--lm-icon-bg);
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="heading-mode">
+                <h1>Dev Detective</h1>
+                <button id="mode-btn">
+                    <p class="mode-text">DARK</p>
+                    <img src="./Images/moon-icon.svg" alt="mode" class="mode-icon">
+                </button>
+            </div>
+            <div class="search-container">
+                <div class="search-bar">
+                    <input type="text" placeholder="Enter a Github username..." id="input" required autofocus>
+                    <button id="search-btn">Search</button>
+                    <p id="error">No Results Found</p>
+                </div>
+                <div class="profile-container">
+                    <div class="user-data">
+                        <div class="user-top">
+                            <div class="user-name-img">
+                                <img src="" alt="" id="photo">
+                                <div class="user-name">
+                                    <h4 id="name"></h4>
+                                    <a href="" id="usertag"></a>
+                                </div>
+                            </div>
+                            <p id="joining"></p>
+                        </div>
+                        <p id="bio"></p>
+                        <div class="stats-container">
+                            <div class="stats">
+                                <span>Repos</span>
+                                <a href="" id="repos"></a>
+                            </div>
+                            <div class="stats">
+                                <span>Followers</span>
+                                <a href="" id="followers"></a>
+                            </div>
+                            <div class="stats">
+                                <span>Following</span>
+                                <a href="" id="following"></a>
+                            </div>
+                        </div>
+                        <div class="contact-container">
+                            <div class="contact">
+                                <img src="./Images/location-icon.svg">
+                                <p id="location" class="nav"></p>
+                            </div>
+                            <div class="contact">
+                                <img src="./Images/website-icon.svg">
+                                <a href="" id="website" class="nav"></a>
+                            </div>
+                            <div class="contact">
+                                <img src="./Images/twitter-icon.svg">
+                                <a href="" id="twitter" class="nav"></a>
+                            </div>
+                            <div class="contact">
+                                <img src="./Images/company-icon.svg">
+                                <p id="company" class="nav"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
